@@ -143,49 +143,9 @@
                         					
                     </folderInfo>
                     					
-                    <folderInfo id="cdt.managedbuild.config.macosx.so.debug.1888949587.433136160" name="/" resourcePath="src">
-                        						
-                        <toolChain id="cdt.managedbuild.toolchain.gnu.macosx.so.debug.950991276" name="MacOSX GCC" superClass="cdt.managedbuild.toolchain.gnu.macosx.so.debug" unusedChildren="">
-                            							
-                            <targetPlatform id="cdt.managedbuild.target.gnu.platform.macosx.so.debug" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.macosx.so.debug"/>
-                            							
-                            <tool id="cdt.managedbuild.tool.macosx.c.linker.macosx.so.debug.455941046" name="MacOS X C Linker" superClass="cdt.managedbuild.tool.macosx.c.linker.macosx.so.debug.124454251"/>
-                            							
-                            <tool id="cdt.managedbuild.tool.macosx.cpp.linker.macosx.so.debug.612464688" name="MacOS X C++ Linker" superClass="cdt.managedbuild.tool.macosx.cpp.linker.macosx.so.debug.1344638243"/>
-                            							
-                            <tool id="cdt.managedbuild.tool.gnu.assembler.macosx.so.debug.965026536" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.macosx.so.debug.1260997548">
-                                								
-                                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.26090638" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
-                                							
-                            </tool>
-                            							
-                            <tool id="cdt.managedbuild.tool.gnu.archiver.macosx.base.1818044053" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.macosx.base.445868850"/>
-                            							
-                            <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.so.debug.1032638979" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.so.debug.1620817831">
-                                								
-                                <option id="gnu.cpp.compiler.option.dialect.std.544016512" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++11" valueType="enumerated"/>
-                                								
-                                <option id="gnu.cpp.compiler.macosx.so.debug.option.optimization.level.1311252482" name="Optimization Level" superClass="gnu.cpp.compiler.macosx.so.debug.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.more" valueType="enumerated"/>
-                                								
-                                <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1483091599" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
-                                							
-                            </tool>
-                            							
-                            <tool id="cdt.managedbuild.tool.gnu.c.compiler.macosx.so.debug.1167392405" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.macosx.so.debug.1637205380">
-                                								
-                                <option id="gnu.c.compiler.option.dialect.std.803541550" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-                                								
-                                <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1147452089" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
-                                							
-                            </tool>
-                            						
-                        </toolChain>
-                        					
-                    </folderInfo>
-                    					
                     <sourceEntries>
                         						
-                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
                         					
                     </sourceEntries>
                     				
@@ -204,14 +164,6 @@
                 <externalSettings>
                     					
                     <externalSetting>
-                        						
-                        <entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/xenomat"/>
-                        						
-                        <entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/macbook"/>
-                        						
-                        <entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/xenomat/Release"/>
-                        						
-                        <entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/macbook/Release"/>
                         						
                         <entry flags="RESOLVED" kind="libraryFile" name="macbook" srcPrefixMapping="" srcRootPath=""/>
                         					
@@ -343,49 +295,9 @@
                         					
                     </folderInfo>
                     					
-                    <folderInfo id="cdt.managedbuild.config.macosx.so.release.2023311598.1181066785" name="/" resourcePath="src">
-                        						
-                        <toolChain id="cdt.managedbuild.toolchain.gnu.macosx.so.release.28612885" name="MacOSX GCC" superClass="cdt.managedbuild.toolchain.gnu.macosx.so.release" unusedChildren="">
-                            							
-                            <targetPlatform id="cdt.managedbuild.target.gnu.platform.macosx.so.release" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.macosx.so.release"/>
-                            							
-                            <tool id="cdt.managedbuild.tool.macosx.c.linker.macosx.so.release.1574536211" name="MacOS X C Linker" superClass="cdt.managedbuild.tool.macosx.c.linker.macosx.so.release.926591297"/>
-                            							
-                            <tool id="cdt.managedbuild.tool.macosx.cpp.linker.macosx.so.release.1576061528" name="MacOS X C++ Linker" superClass="cdt.managedbuild.tool.macosx.cpp.linker.macosx.so.release.894947190"/>
-                            							
-                            <tool id="cdt.managedbuild.tool.gnu.assembler.macosx.so.release.1449327667" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.macosx.so.release.1551661266">
-                                								
-                                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.1843454910" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
-                                							
-                            </tool>
-                            							
-                            <tool id="cdt.managedbuild.tool.gnu.archiver.macosx.base.16064330" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.macosx.base.376469667"/>
-                            							
-                            <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.so.release.952203930" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.so.release.1492014224">
-                                								
-                                <option id="gnu.cpp.compiler.option.dialect.std.147965577" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++11" valueType="enumerated"/>
-                                								
-                                <option id="gnu.cpp.compiler.macosx.so.release.option.optimization.level.7024193" name="Optimization Level" superClass="gnu.cpp.compiler.macosx.so.release.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.size" valueType="enumerated"/>
-                                								
-                                <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.116688345" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
-                                							
-                            </tool>
-                            							
-                            <tool id="cdt.managedbuild.tool.gnu.c.compiler.macosx.so.release.627210570" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.macosx.so.release.690937241">
-                                								
-                                <option id="gnu.c.compiler.option.dialect.std.666521910" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-                                								
-                                <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.769021821" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
-                                							
-                            </tool>
-                            						
-                        </toolChain>
-                        					
-                    </folderInfo>
-                    					
                     <sourceEntries>
                         						
-                        <entry excluding="bin" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
                         					
                     </sourceEntries>
                     				
