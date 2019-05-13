@@ -156,4 +156,3 @@ NSString *smsGetCalibrationDescription(void);
 
 // Shuts down the accelerometer.
 void smsShutdown(void);
-

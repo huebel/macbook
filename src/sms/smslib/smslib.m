@@ -934,4 +934,3 @@ float fakeData(NSTimeInterval time) {
 	double mag = exp(-(time - (secs - secsMod3)) * 2);
 	return sin(angle) * mag;
 }
-	

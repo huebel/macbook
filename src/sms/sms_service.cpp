@@ -4,6 +4,7 @@
  *  Created on: 12.05.2019
  *      Author: Peter Hübel
  */
+
 //#define NDEBUG // always suppress traces
 #include <xeno/trace.h>
 #include <xeno/document.h>

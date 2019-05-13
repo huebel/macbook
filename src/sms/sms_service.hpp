@@ -1,5 +1,5 @@
 /*
- * basic_service.hpp
+ * sms_service.hpp
  *
  *  Created on: 12.05.2019
  *      Author: Peter Hübel
@@ -33,15 +33,15 @@ public:
 	// which invokes a constructor taking a context as argument.
 	// Overwrite this function, if you need to decide before instan
 
-//	static xeno::action* create(xeno::context& location)
+//	static xeno::action* create(xeno::context& origin)
 //	{
-//		return new sms_service(location);
+//		return new sms_service(origin);
 //	}
 
 private:
 	attribute type;
 };
 
-} /* namespace macbook */
+} // namespace macbook
 
 #endif /* SMS_SERVICE_HPP_ */
