@@ -9,10 +9,22 @@
 #define SMS_SERVICE_HPP_
 
 #include <xeno/service.h>
+#include <boost/circular_buffer.hpp>
 
 namespace macbook {
 
 using namespace xeno;
+using boost::asio::deadline_timer;
+using boost::system::error_code;
+using boost::circular_buffer;
+
+struct sms_acceleration {
+	float x;		// Right-left acceleration (positive is rightwards)
+	float y;		// Front-rear acceleration (positive is rearwards)
+	float z;		// Up-down acceleration (positive is upwards)
+	sms_acceleration() {}
+	IO_CLASS(sms_acceleration);
+};
 
 class sms_service : public xeno::service<sms_service, const xeno::element> {
 public:
@@ -38,8 +50,14 @@ public:
 //		return new sms_service(origin);
 //	}
 
+	void sample(const error_code ec);
+
+	void write_raw_asio();
+
 private:
 	attribute type;
+	deadline_timer timer;
+	circular_buffer<sms_acceleration> buffer;
 };
 
 } // namespace macbook

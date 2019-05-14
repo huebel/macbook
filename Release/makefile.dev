@@ -1,5 +1,5 @@
 ################################################################################
-# Automatically-generated file. Do not edit!
+# Developer makefile for Release version
 ################################################################################
 
 -include ../makefile.init
@@ -7,7 +7,7 @@
 RM := rm -rf
 
 # All of the sources participating in the build are defined here
--include sources.mk
+-include sources.dev
 -include src/sms/subdir.mk
 -include src/sms/smslib/subdir.mk
 -include subdir.mk
@@ -46,17 +46,19 @@ xeno-macbook.so: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MacOS X C++ Linker'
 	g++ -L/usr/local/lib/ -undefined dynamic_lookup -dynamiclib -o "xeno-macbook.so" $(OBJS) $(USER_OBJS) $(LIBS)
+	@strip -x $@
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 test: xeno-macbook.so
 	LD_LIBRARY_PATH=`pwd` xenomat -d ../test/
 
+
 # Other Targets
 clean:
 	-$(RM) $(LIBRARIES)$(CC_DEPS)$(C++_DEPS)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(CPP_DEPS)$(C_DEPS) xeno-macbook.so
 	-@echo ' '
 
-.PHONY: all clean dependents test
+.PHONY: all clean dependents
 
 -include ../makefile.targets

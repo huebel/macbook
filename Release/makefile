@@ -46,8 +46,13 @@ xeno-macbook.so: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MacOS X C++ Linker'
 	g++ -L/usr/local/lib/ -undefined dynamic_lookup -dynamiclib -o "xeno-macbook.so" $(OBJS) $(USER_OBJS) $(LIBS)
+	@strip -x $@
 	@echo 'Finished building target: $@'
 	@echo ' '
+
+test: xeno-macbook.so
+	LD_LIBRARY_PATH=`pwd` xenomat -d ../test/
+
 
 # Other Targets
 clean:
