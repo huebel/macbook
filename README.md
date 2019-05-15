@@ -23,7 +23,7 @@ random order:
 Feel free to bring your own ideas.
 
 ## More fun
-With the <xeno:pipe/> service, you can use all kinds of fancy scripts.
+With the &lt;xeno:pipe/&gt; service, you can use all kinds of fancy scripts.
 The list on https://github.com/herrbischoff/awesome-macos-command-line
 shows the near endless possiblilities.
 
