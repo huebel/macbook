@@ -34,12 +34,13 @@ shows some of the near endless possiblilities.
 Solid knowledge of the XENOmat API and DataVisualisation with d3.js was given,
 so the tasks were largely:
 
-* Learn about SMSLib and how to integrate Objective-C code - 2h
-* Fight with Cevelop (Eclipse CDT) about now wanting to integrate the above - 1h
-* Learn about THREE.js, experimenting in the browser - 2h
-* Polish the GUI, trimming parameters for this UseCase - 2h
+* Learn about SMSLib and how to integrate Objective-C code - **2h**
+* Fight with Cevelop (Eclipse CDT) about now wanting to integrate the above - **1h**
+* Learn about THREE.js, experimenting in the browser - **2h**
+* Polish the GUI, trimming parameters for this UseCase - **2h**
 * Test the service with my adolescent son on his iPad, while throwing my MacBook
-  around, and hearing his ideas for game development - priceless
-* Adding a view service and integrating into the XENOmat Demo Application - 1h
+  around, and hearing his ideas for game development - ***priceless***
+* Adding a view service and integrating into the XENOmat Demo Application - **1h**
   
-All in all it took about 8 hours and made (besides the plugin) a lot of fun.
+In total it took about 8 hours and gave us (besides the App) hours of fun, new 
+ideas, and some deeper insight into compilers, WebGL rendering, and Eclipse CDT.
