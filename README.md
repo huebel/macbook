@@ -1,31 +1,33 @@
 # macbook
 
-A set of microservices for the XENOmat on a MacBook.
+Microservices using the [XENOmat API](https://github.com/huebel/xenomat) on a MacBook.
 
 ## Introduction
 This is a quick (i.e. one working day - see below for WorkBreakDownStructure) 
-MashUp using the awesome simple SMSLib to get data from the MacBooks internal 
-SMS device, and hacking on examples from d3.js, THREE.js on the browser side.
+mash-up using the [awesome simple SMSLib](http://suitable.com/smslib.html) to 
+get data from the MacBooks internal SMS device, and some browser side hacking 
+on examples from [d3.js](https://github.com/d3/d3) and [THREE.js](https://github.com/mrdoob/three.js/).
 
 ## TODO
 A lot of improvement is required by the Community, some of which I mention in
 random order:
 
-*  Return the data as a JSON array,
-*  reduce the precision of the floating point representation to fewer digits,
-   like 3 or so, 
-*	cut the crap and go straight to binary buffers or even BLOB transfer,
-*  render the scenes on the MacBook (in C++). The machines should have enough
-   power, at least consistent when supplied by an AC adapter,
-*	but to save resource usage, go straight to CBOR. Your batteries will thank
-   you (or at least start complaining much later).
+*  Return the data as a JSON array, or
+*  reduce the precision of the floating point representation to fewer digits.
+   I guess like 3 or so would do fine, or
+*	cut the crap and switch to using binary buffers or even BLOB transfer, or
+*  render the scenes on the MacBook (in C++). The machine should have enough
+   power, at least consistent when supplied by an AC adapter, but
+*	to save resource usage, consider [CBOR](https://cbor.io/). Your batteries will thank
+   you (or at least they will start complaining much later).
    
-Feel free to bring your own ideas.
+Feel free to bring your own ideas, and consider making pull requests to this
+repository.
 
 ## More fun
 With the &lt;xeno:pipe/&gt; service, you can use all kinds of fancy scripts.
-The list on https://github.com/herrbischoff/awesome-macos-command-line
-shows the near endless possiblilities.
+This [awesome curated list](https://github.com/herrbischoff/awesome-macos-command-line)
+shows some of the near endless possiblilities.
 
 ## WorkBreakDownSturcture
 
