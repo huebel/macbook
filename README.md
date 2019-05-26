@@ -3,16 +3,17 @@
 Microservices using the [XENOmat API](https://github.com/huebel/xenomat) on a MacBook.
 
 ## Introduction
-This is a quick (i.e. one working day - see below for WorkBreakDownStructure) 
-mash-up using the [awesome simple SMSLib](http://suitable.com/smslib.html) to 
-get data from the MacBooks internal SMS device, and some browser side hacking 
-on examples from [d3.js](https://github.com/d3/d3) and [THREE.js](https://github.com/mrdoob/three.js/).
+This is a quick mash-up using the [awesome simple SMSLib](http://suitable.com/smslib.html) to 
+implement a XENOmat service, which gets data from the MacBooks internal SMS device, and some 
+browser side hacking on some examples from [d3.js](https://github.com/d3/d3) 
+and [THREE.js](https://github.com/mrdoob/three.js/).
 
 ## TODO
 Improvements might be required by the Community, some of which I mention in
 random order:
 
-*  Return the data as a JSON array, or
+*  Return the data as a JSON array to spare som parsing (and use something
+   like [oboe.js](http://oboejs.com/) to dynamically build the model for THREE.js).
 *  reduce the precision of the floating point representation to fewer digits.
    I guess like 3 or so would do fine, or
 *	cut the crap and switch to using binary buffers or even BLOB transfer, or
@@ -44,4 +45,5 @@ so the tasks were largely:
 * Adding a view service and integrating into the XENOmat Demo Application - **1h**
   
 In total it took about 8 hours and gave us (besides the App) hours of fun, a lot of new 
-ideas, and some deeper insight into OS X executables, WebGL rendering, and Eclipse CDT.
+ideas, and some deeper insight into OS X executables, WebGL rendering, and Eclipse CDT,
+which I believe will be a good investment in the future of this project.
