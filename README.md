@@ -44,4 +44,4 @@ so the tasks were largely:
 * Adding a view service and integrating into the XENOmat Demo Application - **1h**
   
 In total it took about 8 hours and gave us (besides the App) hours of fun, a lot of new 
-ideas, and some deeper insight into compilers, WebGL rendering, and Eclipse CDT.
+ideas, and some deeper insight into OS X executables, WebGL rendering, and Eclipse CDT.
