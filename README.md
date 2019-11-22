@@ -4,7 +4,7 @@ Microservices using the [XENOmat API](https://github.com/huebel/xenomat) on a Ma
 
 ## Introduction
 This is a quick mash-up using the [awesome simple SMSLib](http://suitable.com/smslib.html) to 
-implement a XENOmat service, which gets data from the MacBooks internal SMS device, and some 
+implement a XENOmat service, which gets data from the MacBooks internal SMS device (a.k.a. the accelerometer), and some 
 browser side hacking on some examples from [d3.js](https://github.com/d3/d3) 
 and [THREE.js](https://github.com/mrdoob/three.js/).
 
