@@ -188,7 +188,7 @@ void sms_service::write_raw_asio()
 //	boost::asio::write(socket_, buffer_sequence);
 }
 
-// Making the magic with a few macros from <xeno/xeno_io.h>
+// Making the magic happen with a few macros from <xeno/xeno_io.h>
 IO_CLASS_IMPL(sms_acceleration)
 :	IO_ATTR(x)
 ,	IO_ATTR(y)

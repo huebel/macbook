@@ -43,7 +43,8 @@ public:
 
 	// The generator function 'create' has a default implementation,
 	// which invokes a constructor taking a context as argument.
-	// Overwrite this function, if you need to decide before instan
+	// Overwrite this function, if you need to access the context
+	// before instantiation.
 
 //	static xeno::action* create(xeno::context& origin)
 //	{
