@@ -49,14 +49,11 @@ xeno-macbook.so: $(OBJS) $(USER_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-test: xeno-macbook.so
-	LD_LIBRARY_PATH=`pwd` xenomat -d ../test/
-
 # Other Targets
 clean:
 	-$(RM) $(LIBRARIES)$(CC_DEPS)$(C++_DEPS)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(CPP_DEPS)$(C_DEPS) xeno-macbook.so
 	-@echo ' '
 
-.PHONY: all clean dependents test
+.PHONY: all clean dependents
 
 -include ../makefile.targets

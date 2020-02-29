@@ -9,7 +9,6 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include src/sms/subdir.mk
--include src/sms/smslib/subdir.mk
 -include subdir.mk
 -include objects.mk
 
@@ -39,24 +38,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: xeno-macbook.so
+all: xenomat-macbook.so
 
 # Tool invocations
-xeno-macbook.so: $(OBJS) $(USER_OBJS)
+xenomat-macbook.so: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MacOS X C++ Linker'
-	g++ -L/usr/local/lib/ -undefined dynamic_lookup -dynamiclib -o "xeno-macbook.so" $(OBJS) $(USER_OBJS) $(LIBS)
-	@strip -x $@
+	g++ -L/usr/local/lib/ -undefined dynamic_lookup -dynamiclib -o "xenomat-macbook.so" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-test: xeno-macbook.so
-	LD_LIBRARY_PATH=`pwd` xenomat -d ../test/
-
-
 # Other Targets
 clean:
-	-$(RM) $(LIBRARIES)$(CC_DEPS)$(C++_DEPS)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(CPP_DEPS)$(C_DEPS) xeno-macbook.so
+	-$(RM) $(LIBRARIES)$(CC_DEPS)$(C++_DEPS)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(CPP_DEPS)$(C_DEPS) xenomat-macbook.so
 	-@echo ' '
 
 .PHONY: all clean dependents

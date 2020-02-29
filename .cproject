@@ -239,7 +239,7 @@
                                     								
                                 </inputType>
                                 								
-                                <outputType id="cdt.managedbuild.tool.macosx.cpp.linker.macosx.so.release.output.1956062476" outputPrefix="xenomat-" superClass="cdt.managedbuild.tool.macosx.cpp.linker.macosx.so.release.output"/>
+                                <outputType id="cdt.managedbuild.tool.macosx.cpp.linker.macosx.so.release.output.1956062476" outputPrefix="xeno-" superClass="cdt.managedbuild.tool.macosx.cpp.linker.macosx.so.release.output"/>
                                 							
                             </tool>
                             							
