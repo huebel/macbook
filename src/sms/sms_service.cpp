@@ -25,8 +25,8 @@ struct sms_calibration {
 
 IO_CLASS_IMPL(sms_calibration)
 {
-	IO_ARRAY(zeros);
-	IO_ARRAY(onegs);
+	IO_ARRAY(zero, zeros);
+	IO_ARRAY(oneg, onegs);
 }
 
 extern "C" {
@@ -137,8 +137,8 @@ void sms_service::invoke(contact& visitor, sequens& route)
 				break;
 			}
 
-			// Yes, there's overflow all over the place here, but it doesn't
-			// matter.
+			// Yes, there's overflow all over the place here,
+			// but it doesn't matter.
 			thisUTime = getUTime();
 			waitUTime = lastUTime + uPeriod - thisUTime;
 			if (waitUTime > 0) {
@@ -189,6 +189,8 @@ void sms_service::write_raw_asio()
 }
 
 // Making the magic happen with a few macros from <xeno/xeno_io.h>
+// and ignoring the "field 'x' is uninitialized" etc. warnings
+#pragma GCC diagnostic ignored "-Wuninitialized"
 IO_CLASS_IMPL(sms_acceleration)
 :	IO_ATTR(x)
 ,	IO_ATTR(y)

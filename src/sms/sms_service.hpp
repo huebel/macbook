@@ -19,10 +19,17 @@ using boost::system::error_code;
 using boost::circular_buffer;
 
 struct sms_acceleration {
+
 	float x;		// Right-left acceleration (positive is rightwards)
-	float y;		// Front-rear acceleration (positive is rearwards)
+	float y;		// Front-rear acceleration (positive is towards back)
 	float z;		// Up-down acceleration (positive is upwards)
-	sms_acceleration() {}
+
+	sms_acceleration()
+	:	x(0)
+	,	y(0)
+	,	z(0)
+	{}
+
 	IO_CLASS(sms_acceleration);
 };
 
