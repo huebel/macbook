@@ -17,7 +17,8 @@ CPP_DEPS += \
 src/sms/%.o: ../src/sms/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -std=c++0x -DNDEBUG -DXENO_DARWIN -I../include -Os -g0 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	g++ -std=c++0x -DNDEBUG -DXENO_DARWIN -I../include -Os -Wall -c -fmessage-length=0 -ffunction-sections -fdata-sections -fvisibility=hidden -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
+
 
