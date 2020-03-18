@@ -6,6 +6,7 @@ C_UPPER_SRCS :=
 CXX_SRCS := 
 OBJ_SRCS := 
 C++_SRCS := 
+M_SRCS := 
 CC_SRCS := 
 ASM_SRCS := 
 CPP_SRCS := 
@@ -18,6 +19,7 @@ C++_DEPS :=
 OBJS := 
 C_UPPER_DEPS := 
 CXX_DEPS := 
+M_DEPS := 
 CPP_DEPS := 
 C_DEPS := 
 

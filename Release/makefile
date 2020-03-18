@@ -8,8 +8,8 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include src/sms/subdir.mk
 -include src/sms/smslib/subdir.mk
+-include src/sms/subdir.mk
 -include subdir.mk
 -include objects.mk
 
@@ -25,6 +25,9 @@ ifneq ($(strip $(C_UPPER_DEPS)),)
 endif
 ifneq ($(strip $(CXX_DEPS)),)
 -include $(CXX_DEPS)
+endif
+ifneq ($(strip $(M_DEPS)),)
+-include $(M_DEPS)
 endif
 ifneq ($(strip $(CPP_DEPS)),)
 -include $(CPP_DEPS)
@@ -52,7 +55,7 @@ xeno-macbook.so: $(OBJS) $(USER_OBJS)
 
 # Other Targets
 clean:
-	-$(RM) $(LIBRARIES)$(CC_DEPS)$(C++_DEPS)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(CPP_DEPS)$(C_DEPS) xeno-macbook.so
+	-$(RM) $(LIBRARIES)$(CC_DEPS)$(C++_DEPS)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(M_DEPS)$(CPP_DEPS)$(C_DEPS) xeno-macbook.so
 	-@echo ' '
 
 .PHONY: all clean dependents
