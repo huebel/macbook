@@ -164,7 +164,8 @@ struct context_writer: io_object<context_writer> {
 		}
 	}
 
-	this_io_t io_part(const char* name) const
+	template <typename T>
+	this_io_t io_part(const char* name, const T& /* part_object */) const
 	{
 		xeno::element& target = current().child(name);
 		return this_io_t(target);
@@ -348,6 +349,23 @@ struct context_reader: io_object<context_reader> {
 	}
 
 	template <typename T>
+	const T io_text_def(const char* name, const T& /*val*/, const T& def) const
+	{
+//		TRACELN("R::io_text_def");
+		xeno::textvalue text(name, current());
+		if (text.defined() && !text.empty()) {
+			try {
+				T value = boost::lexical_cast<T>(text.str());
+				return value;
+			}
+			catch (boost::bad_lexical_cast& ex) {
+				TRACELN("ERROR: conversion failed, using default");
+			}
+		}
+		return def;
+	}
+
+	template <typename T>
 	const T io_text_nul(const T& /*val*/) const
 	{
 //		TRACELN("R::io_text_nul");
@@ -378,7 +396,8 @@ struct context_reader: io_object<context_reader> {
 		return 0;
 	}
 
-	context_reader io_part(const char* name) const
+	template <typename T>
+	context_reader io_part(const char* name, T& /* part_object */) const
 	{
 		const xeno::element* target = xeno::find_element(current(), name);
 		assert(target);
