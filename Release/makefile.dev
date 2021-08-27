@@ -6,6 +6,8 @@
 
 RM := rm -rf
 
+STATIC_BOOST_LIBS := /usr/local/opt/boost/lib/libboost_system.a /usr/local/opt/boost/lib/libboost_chrono.a
+
 # All of the sources participating in the build are defined here
 -include sources.dev
 -include src/sms/subdir.mk
@@ -44,8 +46,8 @@ all: xeno-macbook.so
 # Tool invocations
 xeno-macbook.so: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
-	@echo 'Invoking: MacOS X C++ Linker'
-	g++ -L/usr/local/lib/ -undefined dynamic_lookup -dynamiclib -o "xeno-macbook.so" $(OBJS) $(USER_OBJS) $(LIBS)
+	@echo 'Invoking: MacOS X C++ Linker (static linking Boost)'
+	g++ -w -undefined dynamic_lookup -dynamiclib -o xeno-macbook.so $(OBJS) $(USER_OBJS) $(STATIC_BOOST_LIBS)
 	@strip -x $@
 	@echo 'Finished building target: $@'
 	@echo ' '
